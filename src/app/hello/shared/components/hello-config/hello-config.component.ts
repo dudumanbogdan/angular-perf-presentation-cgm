@@ -17,7 +17,7 @@ export class HelloConfigComponent implements OnInit {
 
 
   get runChangeDetection(): string {
-    console.log('Checking the view');
+    console.log('Checking the view - hello-config');
     return 'Checking the view - hello-config';
   }
 }

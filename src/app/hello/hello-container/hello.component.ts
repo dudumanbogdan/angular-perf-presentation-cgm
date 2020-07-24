@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-hello',
   templateUrl: './hello.component.html',
-  styleUrls: ['./hello.component.scss']
+  styleUrls: ['./hello.component.scss'],
+  // changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HelloComponent implements OnInit {
 

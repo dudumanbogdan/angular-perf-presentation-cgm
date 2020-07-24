@@ -11,6 +11,8 @@ export class AppComponent {
     position: 'top'
   };
 
+  helloItems = [{ title: 'One' }, { title: 'Two' }];
+
   onClick(): void {
     this.config = {
       ...this.config, position: 'bottom - ' + new Date().toString()
@@ -18,5 +20,10 @@ export class AppComponent {
   }
 
   onClick2(): void {
+  }
+
+  add() {
+    this.helloItems.push({title: 'Three' + new Date().toString()});
+    // this.helloItems = [...this.helloItems, { title: 'Three' }];
   }
 }

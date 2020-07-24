@@ -5,14 +5,15 @@ import { HelloRoutingModule } from './hello-routing.module';
 import { HelloComponent } from 'src/app/hello/hello-container/hello.component';
 import { HelloConfigComponent } from './shared/components/hello-config/hello-config.component';
 import { HelloCounterComponent } from './shared/components/hello-counter/hello-counter.component';
+import { HelloListComponent } from './shared/components/hello-list/hello-list.component';
 
 
 @NgModule({
-  declarations: [HelloComponent, HelloConfigComponent, HelloCounterComponent],
+  declarations: [HelloComponent, HelloConfigComponent, HelloCounterComponent, HelloListComponent],
   imports: [
     CommonModule,
     HelloRoutingModule
   ],
-  exports: [HelloComponent, HelloConfigComponent, HelloCounterComponent]
+  exports: [HelloComponent, HelloConfigComponent, HelloCounterComponent, HelloListComponent]
 })
 export class HelloModule { }

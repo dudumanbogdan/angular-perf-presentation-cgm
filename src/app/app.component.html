@@ -1,8 +1,11 @@
 <div style="border: 10px solid green; padding: 10px;">
-  <!-- <app-hello></app-hello> -->
+  <app-hello></app-hello>
   <!-- <app-hello-config [config]="config"></app-hello-config> -->
-  <app-hello-counter></app-hello-counter>
+  <!-- <app-hello-counter></app-hello-counter> -->
+    <app-hello-list [helloItems]="helloItems"></app-hello-list>
+
   <br />
   <button (click)="onClick()">Trigger change detection</button>
   <button (click)="onClick2()">Trigger change detection 2</button>
+  <button (click)="add()">Add hello item</button>
 </div>

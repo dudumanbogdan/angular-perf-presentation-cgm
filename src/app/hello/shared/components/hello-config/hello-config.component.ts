@@ -4,7 +4,7 @@ import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core
   selector: 'app-hello-config',
   templateUrl: './hello-config.component.html',
   styleUrls: ['./hello-config.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  // changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HelloConfigComponent implements OnInit {
 

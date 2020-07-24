@@ -12,6 +12,8 @@ export class AppComponent {
   };
 
   onClick(): void {
-    this.config.position = 'bottom';
+    this.config = {
+      ...this.config, position: 'bottom - ' + new Date().toString()
+    };
   }
 }

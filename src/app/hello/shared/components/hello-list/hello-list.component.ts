@@ -4,7 +4,7 @@ import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core
   selector: 'app-hello-list',
   templateUrl: './hello-list.component.html',
   styleUrls: ['./hello-list.component.scss'],
-  // changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HelloListComponent implements OnInit {
   @Input() helloItems;

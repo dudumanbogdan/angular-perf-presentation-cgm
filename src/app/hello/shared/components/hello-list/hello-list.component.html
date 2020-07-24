@@ -1,5 +1,5 @@
 <div style="border: 10px solid #82faad">
   <div *ngFor="let item of helloItems">
-    {{ item.title }} {{ runChangeDetection }}
+    <app-hello-item [item]="item"></app-hello-item>
   </div>
 </div>

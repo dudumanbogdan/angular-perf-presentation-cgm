@@ -12,4 +12,8 @@ export class HelloComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  get runChangeDetection(): string {
+    console.log('Checking the view');
+    return 'Always check me!';
+  }
 }

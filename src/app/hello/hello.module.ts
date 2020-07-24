@@ -10,6 +10,7 @@ import { HelloComponent } from 'src/app/hello/hello-container/hello.component';
   imports: [
     CommonModule,
     HelloRoutingModule
-  ]
+  ],
+  exports: [HelloComponent]
 })
 export class HelloModule { }

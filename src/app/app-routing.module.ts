@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HelloComponent } from 'src/app/hello/hello-container/hello.component';
 
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'hello' },
-  { path: 'hello', loadChildren: () => import('./hello/hello.module').then(m => m.HelloModule) }
+  { path: 'hello', component: HelloComponent }
 ];
 
 @NgModule({

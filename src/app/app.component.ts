@@ -7,8 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-workshop-cgm';
+  config = {
+    position: 'top'
+  };
 
   onClick(): void {
-
+    this.config.position = 'bottom';
   }
 }

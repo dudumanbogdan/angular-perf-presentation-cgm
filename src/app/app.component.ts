@@ -23,7 +23,7 @@ export class AppComponent {
   }
 
   add() {
-    this.helloItems.push({title: 'Three' + new Date().toString()});
-    // this.helloItems = [...this.helloItems, { title: 'Three' }];
+    // this.helloItems.push({title: 'Three' + new Date().toString()});
+    this.helloItems = [...this.helloItems, { title: 'Three' }];
   }
 }

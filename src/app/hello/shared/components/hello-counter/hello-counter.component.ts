@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'app-hello-counter',
@@ -7,10 +7,17 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HelloCounterComponent implements OnInit {
-  count = { value: 0};
+  count = { value: 0 };
+
+  constructor(private cdr: ChangeDetectorRef) {
+  }
 
   ngOnInit(): void {
-    setTimeout(() => (this.count = { value: 5 }), 0);
+    setTimeout(() => {
+      this.count = { value: 5 };
+      this.cdr.detectChanges();
+    }, 1000);
+
     Promise.resolve().then(() => (this.count = { value: 5 }));
   }
 
